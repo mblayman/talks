@@ -17,6 +17,24 @@ Matt Layman [@mblayman](https://twitter.com/mblayman)
 
 ---
 
+# Why version control?
+
+--
+
+team-project
+--
+.v2.8
+--
+.johns-comments
+--
+.edit-3
+--
+.kates-redlines.7
+--
+.oh-please-stop-the-pain.docx
+
+---
+
 class: center, middle
 
 # Git - A Primer
@@ -125,6 +143,14 @@ Global configuration data is stored in `~/.gitconfig`.
         ui = true
 ```
 
+--
+
+For all the gory details
+
+```bash
+$ git config --help
+```
+
 ---
 
 class: center
@@ -156,27 +182,95 @@ Honestly, it doesn't matter. They have developer mindshare.
 
 ---
 
-# Step 1
+# Make an account
 
-Make an account at https://github.com.
+https://github.com
 
 --
 
-**Seriously**, 
+**Seriously**
 --
-if you don't have an account, 
+, if you don't have an account
 --
-and you're a developer, 
+, and you're a developer
 --
-and you have a computer
-with access to the internet right now, 
+, and you have a computer
+with access to the internet right now
 --
-*stop listening to me until you make an account*.
+
+
+*Stop listening to me until you make an account!*
 
 ---
 
-# Step 2
+# Handle SSH keys
 
-Create an ssh key and add your public key to GitHub.
+* Create an ssh key.
+* Add your public key to GitHub.
 
 https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+---
+
+class: center, middle
+
+# Fork a repo
+
+---
+
+# Cloning
+
+--
+
+Your local clone should be the *upstream* repository.
+
+--
+
+IMO, this is an easier workflow than having a local clone
+of your *forked* repository.
+
+---
+
+class: center, middle
+
+# A Tale of Two Features
+
+---
+
+# Local upstream
+
+1. Create a branch
+2. Fix issue A
+3. Get fix merged in GitHub (remote) master
+4. **Pull to local master**
+5. Create a branch
+6. Fix issue B
+7. Get fix merged in GitHub (remote) master
+
+---
+
+# Local forked
+
+1. Create a branch
+2. Fix issue A
+3. Get fix merged in GitHub (remote) master
+4. **Merge upstream master into forked master**
+5. Create a branch
+6. Fix issue B
+7. Get fix merged in GitHub (remote) master
+
+---
+
+class: center, middle
+
+# Pull Requests
+
+They're great. Let's do some.
+
+---
+
+class: center, middle
+
+# Thanks!
+
+Matt Layman [@mblayman](https://twitter.com/mblayman)
