@@ -75,6 +75,9 @@ class: center, middle
 It is. Elixir is a new language that compiles to the BEAM.
 It's the cool younger sibling of Erlang.
 
+* Elixir started in 2011.
+* Talking about BEAM to emphasize stability.
+
 ---
 
 ## How is the BEAM so magical?
@@ -107,6 +110,31 @@ Code has defined inputs and outputs with minimal side effects
 
 * Threaded model: communicate by sharing state (hence locks)
 * Actor model: share state by communicating
+
+---
+
+## Contrast with Python
+
+--
+
+* A threaded program in Python will be slower than a non-threaded one.
+???
+
+Thanks to the GIL
+
+--
+
+* A program can create multiple processes
+???
+
+These are slow to create because of fork/exec
+
+--
+
+### Languages like Python were not designed with concurrency as a core primitive
+
+???
+Forces third party software like Celery/Redis/ZeroMQ for inter-process communication.
 
 ---
 
