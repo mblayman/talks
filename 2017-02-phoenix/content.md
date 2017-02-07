@@ -59,6 +59,7 @@ class: center, middle
 Bogdan/Björn's Erlang Abstract Machine
 
 * The virtual machine powering Erlang. First appearing in 1992.
+* Chat about VMs. Java, Python, Ruby, C#
 * Concurrent execution to run on all cores.
 * 9 9s of uptime. 99.9999999%. <1s in 20 years.
 
@@ -141,6 +142,77 @@ Forces third party software like Celery/Redis/ZeroMQ for inter-process communica
 class: center, middle
 
 <img src="phoenix.png" width="500">
+
+---
+
+## Phoenix
+
+* Most popular web framework in the Elixir community
+???
+
+The Rails of Elixir.
+1 of 2 project driving adoption of Elixir. The other being Nerves.
+
+--
+
+* Server rendered pages
+???
+
+ERB comparison
+
+--
+
+* Strong websocket support
+???
+
+Talk about pipelines and compare with Django.
+
+--
+
+* Integration with Brunch... because JavaScript exists whether you like it or not
+
+---
+
+class: center, middle
+
+## Template Tricks
+
+<img src="template_caching.png" width="700">
+
+???
+`writev`
+
+https://www.bignerdranch.com/blog/elixir-and-io-lists-part-2-io-lists-in-phoenix/
+
+---
+
+## Danger!<br>Serious Computer Science Ahead
+
+--
+
+# CRDTs
+
+???
+
+Context free replicated data types
+
+---
+
+class: center, middle
+
+## Brunch
+
+<img src="brunch.jpg" width="500">
+
+???
+
+Not a task runner. A bundle builder
+
+---
+
+class: center, middle
+
+# Demo
 
 ---
 
